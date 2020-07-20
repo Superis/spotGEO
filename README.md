@@ -21,6 +21,8 @@ The metrics used to evaluate a valid submission are based on a provided script. 
 For a frame prediction of objects and coordinates, a matching is performed between objects and predictions and we consider True Positives,False Positives and False Negatives.
 There is an error threshold ε that if it's bigger than matching prediction distance, the prediction is a true positive and regression error 0 . If it is smaller than this but prediction smaller than τ, it's still true positive with regression error d(x,y). If it's bigger than τ, it's false positive with regression error t^2 and also object considered false negative with extra regression error of t^2. 
 
+Full desc here: https://kelvins.esa.int/spot-the-geo-satellites/scoring/
+
 STARTER-KIT
 
 A starter-kit is provided to start with and experiment on the problem analysis. The approach is based on the following :
