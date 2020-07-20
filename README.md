@@ -41,6 +41,7 @@ b. The way that we process these results to have the best possible matching with
 So in first, we will try to improve seperately these two actions.
 
 
-Comments for instructors
+Comments for instructors:
+
 In folder results there are 2 csv files with results for different windows size, some different classifiers and different sampling of negative pixels.
 The score of starter-kit has been recorder as 0.995 and the best until now as far as our trials are concerned is 0.98(so it's a bit improved) with LinearSVC,radius=3 and 30 negative samples per image which means a more imbalanced set, but achieves higher precision. 
