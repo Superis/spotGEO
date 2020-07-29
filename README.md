@@ -3,7 +3,7 @@ Detecting orbit objects on sky telescope images
 
 THE PROBLEM
 
-The competition’s topic concerns the correct detection and localization of Geo orbit objects that exist in sky images taken from different telescopes.
+The competitionâ€™s topic concerns the correct detection and localization of Geo orbit objects that exist in sky images taken from different telescopes.
 
 Full desc here: https://kelvins.esa.int/spot-the-geo-satellites/problem/ 
 
@@ -19,7 +19,7 @@ METRICS
 
 The metrics used to evaluate a valid submission are based on a provided script. The ranking is computed based on F1 metric of predictions (5120 sequences) and MSE as tie-breaker.
 For a frame prediction of objects and coordinates, a matching is performed between objects and predictions and we consider True Positives,False Positives and False Negatives.
-There is an error threshold ε that if it's bigger than matching prediction distance, the prediction is a true positive and regression error 0 . If it is smaller than this but prediction smaller than τ, it's still true positive with regression error d(x,y). If it's bigger than τ, it's false positive with regression error t^2 and also object considered false negative with extra regression error of t^2. 
+There is an error threshold Îµ that if it's bigger than matching prediction distance, the prediction is a true positive and regression error 0 . If it is smaller than this but prediction smaller than Ï„, it's still true positive with regression error d(x,y). If it's bigger than Ï„, it's false positive with regression error t^2 and also object considered false negative with extra regression error of t^2. 
 
 Full desc here: https://kelvins.esa.int/spot-the-geo-satellites/scoring/
 
@@ -73,12 +73,12 @@ Score: 0.994795, (MSE: 7976.412073)
 
 
 NEGATIVES==20 SVC RAD3
-Recall 65.5 � Precision 41.4
+Recall 65.5 – Precision 41.4
 Compute score... 0.010656333252603536 0.12753623188405797
 Score: 0.980331, (MSE: 7918.724769)
 
 NEGATIVES==20 SVC RAD2
-Recall 66.8 � Precision 40.1
+Recall 66.8 – Precision 40.1
 Compute score... 0.010306778222383897 0.12318840579710146
 Score: 0.980978, (MSE: 7915.970767)
 
@@ -129,7 +129,7 @@ Score: 0.978159, (MSE: 7616.556239)
 ?ntelligent sampling of negative pixels
 
 Neg20-Rad2-Filter3-10
-Precision 56.9� Recall 34.8
+Precision 56.9– Recall 34.8
 Compute score... TP 47 FP 3398 FN 643
 0.013642960812772133 0.06811594202898551
 Score: 0.977267, (MSE: 7722.822991)
@@ -154,6 +154,8 @@ Compute score... TP 26 FP 2419 FN 164
 Score: 0.980266, (MSE: 1980.495822)
 
 
-
+Compute score... TP 56 FP 2165 FN 134
+0.025213867627194957 0.29473684210526313
+Score: 0.953546, (MSE: 1953.300880)
 
 
