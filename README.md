@@ -40,6 +40,13 @@ b. The way that we process these results to have the best possible matching with
 
 So in first, we will try to improve seperately these two actions.
 
+
+Comments for instructors:
+
+In folder results there are 2 csv files with results for different windows size, some different classifiers and different sampling of negative pixels.
+The score of starter-kit has been recorder as 0.995 and the best until now as far as our trials are concerned is 0.98(so it's a bit improved) with LinearSVC,radius=3 and 30 negative samples per image which means a more imbalanced set, but achieves higher precision. 
+
+
 Pixel Classifier
 
 Intelligent Sampling of Negatives
@@ -145,6 +152,7 @@ recall: 83.7 precision: 54.9
 Compute score... TP 26 FP 2419 FN 164
 0.01063394683026585 0.1368421052631579
 Score: 0.980266, (MSE: 1980.495822)
+
 
 
 
